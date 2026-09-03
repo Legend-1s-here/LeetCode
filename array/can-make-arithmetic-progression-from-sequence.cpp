@@ -3,7 +3,7 @@ public:
     bool canMakeArithmeticProgression(vector<int>& arr) {
         sort(arr.begin(),arr.end());
         bool is=false;
-        for(int i=1;i<arr.size();i++){
+        for(int i=1;i<arr.size()-1;i++){
             if((arr[i]-arr[i-1])==(arr[i+1]-arr[i])){
                 is=true;
             }
