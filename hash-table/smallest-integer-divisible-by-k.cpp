@@ -9,13 +9,13 @@ public:
         }
         long long ans=1;
         long long c=0;
-        for(int i=0;i<15;i++){
+        for(int i=0;i<18;i++){
             c++;
             if(ans%k==0){
                 break;
             }
             ans=ans*10+1;
-            if(i==14){
+            if(i==17){
                 c=-1;
                 break;
             }
