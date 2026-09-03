@@ -13,6 +13,9 @@ public:
             y=y*10+a;
             x=x/10;
         }
+        if (y > INT_MAX || y < INT_MIN) {
+            return 0;
+        }
         if(is==true){
             return y;
         }
