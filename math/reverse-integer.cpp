@@ -5,7 +5,6 @@ public:
         long long y=0;
         bool is=true;
         if(x<0){
-            x=-x;
             is=false;
         }
         while(x!=0){
@@ -16,11 +15,6 @@ public:
         if (y > INT_MAX || y < INT_MIN) {
             return 0;
         }
-        if(is==true){
-            return y;
-        }
-        else{
-            return -y;
-        }
+        return y;
     }
 };
