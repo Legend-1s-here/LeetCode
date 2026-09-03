@@ -1,8 +1,8 @@
 class Solution {
 public:
     int reverse(int x) {
-        int a=0;
-        int y=0;
+        long long a=0;
+        long long y=0;
         bool is=true;
         if(x<0){
             x=-x;
