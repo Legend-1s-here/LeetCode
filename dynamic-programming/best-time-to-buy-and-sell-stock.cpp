@@ -9,7 +9,7 @@ public:
                 mi=prices[i];
                 is=false;
             }
-            if((prices[i]<mi) && (i==prices.size()-1)){
+            if((prices[i]<=mi) && (i==prices.size()-1)){
                 return 0;
             }
             if(mi<prices[i] && is==true){
