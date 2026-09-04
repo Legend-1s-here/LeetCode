@@ -13,7 +13,7 @@ public:
         if(x==-1 && n%2!=0){
             return -1;
         }
-        int bin=n;
+        long long bin=n;
         if(n<0){
             x=1/x;
             bin=-bin;
