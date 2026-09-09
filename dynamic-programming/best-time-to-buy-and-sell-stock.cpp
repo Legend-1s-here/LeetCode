@@ -17,6 +17,12 @@ public:
                 return 0;
             }
         }
-        return m-mi;
+        if(m-mi>0){
+            return m-mi;
+        }
+        else{
+            return 0;
+        }
+        
     }
 };
