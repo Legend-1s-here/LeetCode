@@ -7,7 +7,7 @@ public:
             long long m=nums[st];
             long long mid=st+(end-st)/2;
             if(target>nums[mid]){
-                st=mid+1;
+                end=mid-1;
             }
             else if(target<nums[mid] && target>=m){
                 end=mid-1;
