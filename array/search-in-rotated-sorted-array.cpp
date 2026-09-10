@@ -5,8 +5,12 @@ public:
         long long end=nums.size()-1;
         while(st<=end){
             long long m=nums[st];
+            long long e=nums[end];
             long long mid=st+(end-st)/2;
-            if(target>nums[mid]){
+            if(target>nums[mid] && target<=e){
+                st=mid+1;
+            }
+            else if(target>nums[mid] && target>e){
                 end=mid-1;
             }
             else if(target<nums[mid] && target>=m){
