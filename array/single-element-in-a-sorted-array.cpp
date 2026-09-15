@@ -4,8 +4,7 @@ public:
         int st=0;
         int end=nums.size()-1;
         int mid=(end+st)/2;
-        bool is=true;
-        while(is){
+        while(st<end){
             if(nums[mid]!=nums[mid+1] && nums[mid]!=nums[mid-1]){
                 return nums[mid];
             }
