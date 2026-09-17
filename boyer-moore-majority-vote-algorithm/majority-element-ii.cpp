@@ -18,12 +18,8 @@ public:
                 v.push_back(nums[i]);
             }
         }
-        for(int j=0;j<v.size()-1;j++){
-            if(v[j]==v[j+1]){
-                v.erase(v.begin()+j);
-                j--;
-            }
-        }
+        auto last=unique(v.begin(),v.end());
+        v.erase(last, v.end());
         return v;
     }
 };
